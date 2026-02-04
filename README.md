@@ -838,9 +838,12 @@ This project is open-source and available for educational and commercial use. No
 - **Icons**: Font Awesome
 - **Fonts**: Google Fonts
 - **Libraries**: jQuery, DataTables
-- **Designed by**: Kizito Ngonye
+- **Designed by**: Kizito Ngonye 
 
 ---
+## For Question
+- Contact me @ kizzy.ngo@gmail.com
+
 
 **Last Updated**: February 4, 2026
 
