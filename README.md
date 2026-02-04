@@ -4,7 +4,7 @@
 ![Life 4 All Pharmacy Logo](assets/about.jpg)
 
 
-A comprehensive web-based pharmacy management system with an integrated public website for **Life 4 All Pharmacy**, a community pharmacy in Malta. This application provides complete inventory management, sales tracking, stock management, and user administration capabilities.
+A comprehensive web-based fictious pharmacy management system with an integrated public website for **Life 4 All Pharmacy**, a community pharmacy in Malta. This application provides complete inventory management, sales tracking, stock management, and user administration capabilities.
 
 ## 📋 Project Overview
 
@@ -70,7 +70,7 @@ life4all-pharmacy/
 │   │   └── connect2.php             # Secondary connection config
 │   │
 │   ├── db/
-│   │   └── product_expiry_goodness.sql  # Database schema
+│   │   └── pharmacy.sql  # Database schema
 │   │
 │   ├── uploadImage/                 # Staff photo storage
 │   │
@@ -108,7 +108,7 @@ life4all-pharmacy/
 │   └── alter-password-column.sql    # Password column migration
 │
 └── README.md                         # This file
-```
+``
 │   ├── js/
 │   │   └── main.js                 # Frontend functionality
 │   ├── logo.png                    # Pharmacy logo
@@ -126,7 +126,7 @@ life4all-pharmacy/
 │   └── detail.html                  # Product inventory details
 │
 ├── Database Schema
-│   └── product_expiry_goodness.sql  # Complete database structure
+│   └── pharmacy.sql  # Complete database structure
 │
 └── README.md                         # This file
 ```
@@ -440,7 +440,7 @@ The system includes a professional, responsive public website for pharmacy infor
 
 2. **Import Schema**
    ```bash
-   mysql -u root -p pharmacy < admin-master/db/product_expiry_goodness.sql
+   mysql -u root -p pharmacy < admin-master/db/pharmacy.sql
    ```
 
 3. **Populate Initial Data** (Optional)
@@ -520,8 +520,8 @@ define('DB_NAME','pharmacy');     // Database name
 - Initial setup: Create first admin via direct database insert
 
 #### **Admin Dashboard** (`admin/login.php`)
-- Username: `admin`
-- Password: `Life4All2026!` (Password hash: `$2y$10$TN2M5n.ZcNCL5Og6qx8pXemGDEHi4i8/A9FwYCMc0FUnN9kTcKayS`)
+- Username: `admin@life4allpharmacy.test`
+- Password: `123456789!` 
 
 ### File Permissions
 
@@ -557,12 +557,12 @@ Update to your local timezone as needed.
 The system sends SMS alerts for products expiring within 3 days. Configure in `admin-master/index.php`:
 
 ```php
-$username='info.autosyst@yahoo.comxxxx';  // SMS service username
-$password='Integax@2022xxxx';             // SMS service password
-$sender='Life4All';                       // Sender ID
+$username='info@life4allpharmacy.test';  // SMS service username (change the email to your own SMS service email or keep blank)
+$password='Integax@2022xxxx';             // SMS service password (change the password to your own SMS service password or keep blank)
+$sender='Life4All';                       // Sender ID (change to your prefered sender ID)
 ```
 
-Update with your SMS provider credentials (e.g., Nigeria Bulk SMS, Twilio, etc.)
+Update with your SMS provider credentials (e.g., Twilio, etc.)
 
 ### Email Configuration
 
