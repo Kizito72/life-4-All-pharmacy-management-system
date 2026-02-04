@@ -1,4 +1,8 @@
+
 # Life 4 All Pharmacy - Web-based Pharmacy Product Management System
+
+![Life 4 All Pharmacy Logo](assets/about.jpg)
+
 
 A comprehensive web-based pharmacy management system with an integrated public website for **Life 4 All Pharmacy**, a community pharmacy in Malta. This application provides complete inventory management, sales tracking, stock management, and user administration capabilities.
 
