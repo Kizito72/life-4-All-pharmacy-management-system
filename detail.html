@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product details and inventory - Life 4 All Pharmacy Malta">
+    <title>Product Details - Life 4 All Pharmacy Malta</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicon-apple.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .product-table {
+            margin-bottom: 3rem;
+        }
+
+        .table-header {
+            background-color: var(--secondary-blue);
+            color: white;
+            font-weight: 600;
+        }
+
+        .table-row-even {
+            background-color: var(--light-gray);
+        }
+
+        .category-section {
+            margin-bottom: 2rem;
+        }
+
+        .category-title {
+            border-left: 4px solid var(--secondary-blue);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-navy);
+        }
+
+        .price-badge {
+            background-color: var(--secondary-blue);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .expiry-warning {
+            color: #dc3545;
+            font-weight: 600;
+        }
+
+        .in-stock {
+            color: #28a745;
+            font-weight: 600;
+        }
+
+        .low-stock {
+            color: #ffc107;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Life 4 All Pharmacy Logo" width="164" height="60" class="d-inline-block align-text-top me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Product Details & Inventory</h1>
+                    <p class="lead">Complete product information with pricing and availability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Prescription Medicines -->
+            <div class="category-section">
+                <h3 class="category-title"><i class="fas fa-prescription-bottle-alt me-2"></i>Prescription Medicines</h3>
+                <div class="table-responsive product-table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="table-header">
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Expiry Date</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Antibiotics</td>
+                                <td>Prescription Medicines</td>
+                                <td>2026-08-15</td>
+                                <td><span class="in-stock">45 units</span></td>
+                                <td><span class="price-badge">€12.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Cardiovascular</td>
+                                <td>Prescription Medicines</td>
+                                <td>2026-10-20</td>
+                                <td><span class="in-stock">32 units</span></td>
+                                <td><span class="price-badge">€18.75</span></td>
+                            </tr>
+                            <tr>
+                                <td>Diabetes Care</td>
+                                <td>Prescription Medicines</td>
+                                <td>2026-06-10</td>
+                                <td><span class="low-stock">8 units</span></td>
+                                <td><span class="price-badge">€25.00</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Mental Health</td>
+                                <td>Prescription Medicines</td>
+                                <td>2027-01-05</td>
+                                <td><span class="in-stock">28 units</span></td>
+                                <td><span class="price-badge">€22.50</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Over-the-Counter Medicines -->
+            <div class="category-section">
+                <h3 class="category-title"><i class="fas fa-pills me-2"></i>Over-the-Counter Medicines</h3>
+                <div class="table-responsive product-table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="table-header">
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Expiry Date</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pain Relief</td>
+                                <td>Over-the-Counter</td>
+                                <td>2026-12-30</td>
+                                <td><span class="in-stock">85 units</span></td>
+                                <td><span class="price-badge">€6.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Cold & Flu</td>
+                                <td>Over-the-Counter</td>
+                                <td>2026-09-15</td>
+                                <td><span class="in-stock">52 units</span></td>
+                                <td><span class="price-badge">€8.99</span></td>
+                            </tr>
+                            <tr>
+                                <td>Allergy Relief</td>
+                                <td>Over-the-Counter</td>
+                                <td>2026-11-22</td>
+                                <td><span class="in-stock">38 units</span></td>
+                                <td><span class="price-badge">€7.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Digestive Health</td>
+                                <td>Over-the-Counter</td>
+                                <td>2027-02-14</td>
+                                <td><span class="in-stock">41 units</span></td>
+                                <td><span class="price-badge">€5.99</span></td>
+                            </tr>
+                            <tr>
+                                <td>Eye Care</td>
+                                <td>Over-the-Counter</td>
+                                <td>2026-07-18</td>
+                                <td><span class="low-stock">12 units</span></td>
+                                <td><span class="price-badge">€9.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Skin Treatments</td>
+                                <td>Over-the-Counter</td>
+                                <td>2026-10-05</td>
+                                <td><span class="in-stock">29 units</span></td>
+                                <td><span class="price-badge">€14.50</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sleep Aids</td>
+                                <td>Over-the-Counter</td>
+                                <td>2026-08-20</td>
+                                <td><span class="in-stock">33 units</span></td>
+                                <td><span class="price-badge">€11.99</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>First Aid</td>
+                                <td>Over-the-Counter</td>
+                                <td>2027-03-10</td>
+                                <td><span class="in-stock">56 units</span></td>
+                                <td><span class="price-badge">€4.99</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Vitamins & Supplements -->
+            <div class="category-section">
+                <h3 class="category-title"><i class="fas fa-leaf me-2"></i>Vitamins & Supplements</h3>
+                <div class="table-responsive product-table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="table-header">
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Expiry Date</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Vitamin D</td>
+                                <td>Vitamins & Supplements</td>
+                                <td>2027-05-20</td>
+                                <td><span class="in-stock">64 units</span></td>
+                                <td><span class="price-badge">€10.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Vitamin C</td>
+                                <td>Vitamins & Supplements</td>
+                                <td>2026-12-15</td>
+                                <td><span class="in-stock">78 units</span></td>
+                                <td><span class="price-badge">€8.75</span></td>
+                            </tr>
+                            <tr>
+                                <td>Multivitamins</td>
+                                <td>Vitamins & Supplements</td>
+                                <td>2027-01-30</td>
+                                <td><span class="in-stock">45 units</span></td>
+                                <td><span class="price-badge">€15.99</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Omega-3</td>
+                                <td>Vitamins & Supplements</td>
+                                <td>2026-09-25</td>
+                                <td><span class="in-stock">35 units</span></td>
+                                <td><span class="price-badge">€16.50</span></td>
+                            </tr>
+                            <tr>
+                                <td>Calcium</td>
+                                <td>Vitamins & Supplements</td>
+                                <td>2027-02-28</td>
+                                <td><span class="in-stock">50 units</span></td>
+                                <td><span class="price-badge">€12.99</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>B-Complex</td>
+                                <td>Vitamins & Supplements</td>
+                                <td>2026-11-10</td>
+                                <td><span class="in-stock">42 units</span></td>
+                                <td><span class="price-badge">€9.99</span></td>
+                            </tr>
+                            <tr>
+                                <td>Protein Supplements</td>
+                                <td>Vitamins & Supplements</td>
+                                <td>2027-04-15</td>
+                                <td><span class="in-stock">31 units</span></td>
+                                <td><span class="price-badge">€24.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Herbal Supplements</td>
+                                <td>Vitamins & Supplements</td>
+                                <td>2026-08-22</td>
+                                <td><span class="in-stock">27 units</span></td>
+                                <td><span class="price-badge">€13.75</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Baby & Child Care -->
+            <div class="category-section">
+                <h3 class="category-title"><i class="fas fa-baby me-2"></i>Baby & Child Care</h3>
+                <div class="table-responsive product-table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="table-header">
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Expiry Date</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Infant Formula</td>
+                                <td>Baby & Child Care</td>
+                                <td>2026-06-30</td>
+                                <td><span class="in-stock">26 units</span></td>
+                                <td><span class="price-badge">€28.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Diapers & Wipes</td>
+                                <td>Baby & Child Care</td>
+                                <td>2027-01-15</td>
+                                <td><span class="in-stock">89 units</span></td>
+                                <td><span class="price-badge">€19.99</span></td>
+                            </tr>
+                            <tr>
+                                <td>Baby Skincare</td>
+                                <td>Baby & Child Care</td>
+                                <td>2026-10-20</td>
+                                <td><span class="in-stock">44 units</span></td>
+                                <td><span class="price-badge">€11.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Baby Health</td>
+                                <td>Baby & Child Care</td>
+                                <td>2026-12-05</td>
+                                <td><span class="low-stock">7 units</span></td>
+                                <td><span class="price-badge">€14.75</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Personal Care & Hygiene -->
+            <div class="category-section">
+                <h3 class="category-title"><i class="fas fa-spa me-2"></i>Personal Care & Hygiene</h3>
+                <div class="table-responsive product-table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="table-header">
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Expiry Date</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Skincare</td>
+                                <td>Personal Care</td>
+                                <td>2026-11-30</td>
+                                <td><span class="in-stock">37 units</span></td>
+                                <td><span class="price-badge">€17.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Oral Care</td>
+                                <td>Personal Care</td>
+                                <td>2027-03-18</td>
+                                <td><span class="in-stock">61 units</span></td>
+                                <td><span class="price-badge">€5.50</span></td>
+                            </tr>
+                            <tr>
+                                <td>Deodorants</td>
+                                <td>Personal Care</td>
+                                <td>2026-07-25</td>
+                                <td><span class="in-stock">48 units</span></td>
+                                <td><span class="price-badge">€6.99</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Sun Protection</td>
+                                <td>Personal Care</td>
+                                <td>2026-05-15</td>
+                                <td><span class="expiry-warning">3 units</span></td>
+                                <td><span class="price-badge">€12.50</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hair Care</td>
+                                <td>Personal Care</td>
+                                <td>2026-09-10</td>
+                                <td><span class="in-stock">34 units</span></td>
+                                <td><span class="price-badge">€10.99</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Hand Sanitizers</td>
+                                <td>Personal Care</td>
+                                <td>2027-02-20</td>
+                                <td><span class="in-stock">72 units</span></td>
+                                <td><span class="price-badge">€4.75</span></td>
+                            </tr>
+                            <tr>
+                                <td>Women's Health</td>
+                                <td>Personal Care</td>
+                                <td>2026-10-12</td>
+                                <td><span class="in-stock">25 units</span></td>
+                                <td><span class="price-badge">€8.50</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Men's Health</td>
+                                <td>Personal Care</td>
+                                <td>2026-12-28</td>
+                                <td><span class="in-stock">19 units</span></td>
+                                <td><span class="price-badge">€9.75</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Medical Equipment & Devices -->
+            <div class="category-section">
+                <h3 class="category-title"><i class="fas fa-stethoscope me-2"></i>Medical Equipment & Devices</h3>
+                <div class="table-responsive product-table">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="table-header">
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Expiry Date</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Blood Pressure Monitors</td>
+                                <td>Medical Equipment</td>
+                                <td>2028-06-15</td>
+                                <td><span class="in-stock">15 units</span></td>
+                                <td><span class="price-badge">€65.00</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Glucose Meters</td>
+                                <td>Medical Equipment</td>
+                                <td>2028-04-20</td>
+                                <td><span class="in-stock">12 units</span></td>
+                                <td><span class="price-badge">€45.50</span></td>
+                            </tr>
+                            <tr>
+                                <td>Thermometers</td>
+                                <td>Medical Equipment</td>
+                                <td>2028-08-10</td>
+                                <td><span class="in-stock">28 units</span></td>
+                                <td><span class="price-badge">€19.75</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Nebulizers</td>
+                                <td>Medical Equipment</td>
+                                <td>2028-02-28</td>
+                                <td><span class="low-stock">6 units</span></td>
+                                <td><span class="price-badge">€78.50</span></td>
+                            </tr>
+                            <tr>
+                                <td>Mobility Aids</td>
+                                <td>Medical Equipment</td>
+                                <td>2028-11-30</td>
+                                <td><span class="in-stock">22 units</span></td>
+                                <td><span class="price-badge">€35.99</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Compression Stockings</td>
+                                <td>Medical Equipment</td>
+                                <td>2028-09-15</td>
+                                <td><span class="in-stock">18 units</span></td>
+                                <td><span class="price-badge">€42.50</span></td>
+                            </tr>
+                            <tr>
+                                <td>Scales</td>
+                                <td>Medical Equipment</td>
+                                <td>2028-07-22</td>
+                                <td><span class="in-stock">11 units</span></td>
+                                <td><span class="price-badge">€55.00</span></td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td>Diabetic Supplies</td>
+                                <td>Medical Equipment</td>
+                                <td>2026-05-30</td>
+                                <td><span class="expiry-warning">4 units</span></td>
+                                <td><span class="price-badge">€22.75</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Life 4 All Pharmacy</h5>
+                    <p>Your trusted community pharmacy in Malta, committed to providing exceptional healthcare services and professional advice.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Our Services</h5>
+                    <ul>
+                        <li><a href="services.html">Prescriptions</a></li>
+                        <li><a href="services.html">Health Consultations</a></li>
+                        <li><a href="services.html">Health Monitoring</a></li>
+                        <li><a href="services.html">Vaccinations</a></li>
+                        <li><a href="services.html">Wellness Products</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Info</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>1234 5678 Main Street, Birkirkara BKR 2020, Malta</li>
+                        <li><i class="fas fa-phone me-2"></i>+356 1234 5678</li>
+                        <li><i class="fas fa-envelope me-2"></i><a href="">info@life4allpharmacy.test</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Life 4 All Pharmacy. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+                <p>Designed by <a href="https://kiziton.com" target="_blank">Kizito Ngonye</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Back to Top Button Functionality
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
